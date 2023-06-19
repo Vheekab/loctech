@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="styleCSS.css">
+    <link rel="stylesheet" href="mediaCSS.css">
+</head>
+<body>
+    <header>
+        <h4>Welcome to my oraimo exclusive official e-shop. Any concerns please contact care, or victor @ 0806 333 3404 .</h4>
+    </header>
+    <nav>
+        <div><img id="logo1" src="https://media.ng.oraimo.com/logo/stores/1/oraimo_logo2.0.png" alt=""></div>
+        <div id="nav-span">
+            <h4 onclick="returnHome()">Home</h4>
+            <h4>Daily Deals</h4>
+            <h4 onmouseover="showToggle2()" onmouseout="hideToggle2()">Products</h4>
+            <h4>Support</h4>
+            <h4>Refer & Get Discounts</h4>
+            <h4>Freepods 4</h4>
+        </div>
+        <div id="nav-right">
+            <div><input id="search-oraimo" placeholder="Search oraimo products" type="text"></div>
+            <div><img class="icons" src="./images/icons8-cart-30.png" alt=""></div>
+            <div onclick="userPage()"><img class="icons" src="./images/icons8-user-30.png" alt=""></div>
+        </div>
+    </nav>
+    <nav id="nav2">
+        <div onclick="hamburgerMenu()"><img id="menu" src="./images/icons8-menu.svg" alt=""></div>
+        <div><img id="logo-sub" src="https://media.ng.oraimo.com/logo/stores/1/oraimo_logo2.0.png" alt=""></div>
+        <div id="nav2-right">
+            <div><img class="icons" src="./images/icons8-search.svg" alt=""></div>
+            <div><img class="icons" src="./images/icons8-cart-30.png" alt=""></div>
+            <div onclick="userPage()"><img class="icons" src="./images/icons8-user-30.png" alt=""></div>
+        </div>
+    </nav>
+    <div id="hidden-menu">
+        <div>
+            <p onclick="returnHome()" id="hidden-menu-home">HOME</p>
+            <p>DAILY DEALS</p>
+            <p>PRODUCTS</p>
+            <p>SUPPORT</p>
+            <p>REFER & GET DISCOUNTS</p>
+            <p>FREEPODS 4</p>
+        </div>
+    </div>
+    <div id="products-toggle">
+        <div id="products-toggle-grid">
+            <div>
+                <div><img src="https://media.ng.oraimo.com/catalog/category/power_1_1.jpg" alt=""></div>
+                <div class="products-toggle2">
+                    <h4>Power</h4>
+                    <div>
+                        <p>Solar Generator</p>
+                        <p>Power Banks</p>
+                        <p>Power Strip</p>
+                        <p>Wall Chargers</p>
+                        <p>Car Chargers</p>
+                        <p>Cables</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div><img src="https://media.ng.oraimo.com/catalog/category/audio_1.jpg" alt=""></div>
+                <div class="products-toggle2">
+                    <h4>Audio</h4>
+                    <div>
+                        <p>Wireless Stereo Earbuds</p>
+                        <p>Wireless Headphones</p>
+                        <p>Wireless Earphones</p>
+                        <p>Talking Wireless Headsets</p>
+                        <p>Open-ear Headphones</p>
+                        <p>Wired Earphones</p>
+                        <p>Wireless Speakers</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div><img src="https://media.ng.oraimo.com/catalog/category/wearable_1.jpg" alt=""></div>
+                <div class="products-toggle2">
+                    <h4>Wearables</h4>
+                    <div>
+                        <p>Smart Watches</p>
+                        <p>Activity Tackers</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div><img src="https://media.ng.oraimo.com/catalog/category/lifestyle.jpg" alt=""></div>
+                <div class="products-toggle2">
+                    <h4>Lifestyle</h4>
+                    <div>
+                        <p>Shaver & Trimmer & Clipper</p>
+                        <p>Backpack</p>
+                        <p>Vacuums</p>
+                        <p>Mice & Keyboard</p>
+                        <p>Handle Fan</p>
+                        <p>Mirror</p>
+                        <p>Camera Accessory</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav-sub">
+        <p>Free Shipping over ₦9000 in Lagos</p>
+        <p>Cash on Delivery</p>
+        <p>Hassle-Free Warranty</p>
+    </div>
+    <div id="customerlogin"><h2>Customer Login</h2></div>
+    <div id="customerlogin-grid">
+        <div>
+            <h2>Registered Customers</h2>
+            <p>If you have an account, sign in with your email address.</p>
+            <div class="input-div">
+                <h4>Email <span style="color: #e52b2e;">*</span></h4>
+                <input id="email-value" type="text">
+            </div>
+            <div class="input-div">
+                <h4>Password <span style="color: #e52b2e;">*</span></h4>
+                <input id="password-value" type="password">
+            </div>
+            <span id="after-forget">You have entered wrong details</span>
+            <p>Forgot your Password?</p>
+            <div id="sign-in"><button onclick="signInFunction()" class="customer-button">Sign In</button></div>
+            <span id="required">* Required Fields</span>
+        </div>
+        <div>
+            <h2>New Customers</h2>
+            <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more.</p>
+            <div id="create-account"><button class="customer-button">Create an Account</button></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-child">
+            <h4>Newsletter:::</h4>
+            <div>
+                <p>Get the Latest oraimo News and Giveaways</p>
+                <p><input id="input-email" placeholder="Enter your email address" type="text"></p>
+                <p>SERVICE HOURS: Monday-Friday 9AM to 8PM</p>
+                <p>CUSTOMER SERVICE: +234 818 135 3103 (First Choice) <span id="phone"> +234 809 604 0753 </span></p>
+                <p>Whatsapp: +234 901 627 9193 +234 818 642 3337</p>
+            </div>
+        </div>
+        <div class="footer-child">
+            <h4>About oraimo:::</h4>
+            <div>
+                <p>About Us</p>
+                <p>Where to Buy</p>
+                <p>Special Offer</p>
+            </div>
+        </div>
+        <div class="footer-child">
+            <h4>Terms:::</h4>
+            <div>
+                <p>Warranty</p>
+                <p>Order & Shipping</p>
+                <p>Replacement & Refund</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="footer-child">
+            <h4>Get Help:::</h4>
+            <div>
+                <p>Visit Carlcare</p>
+                <p>Track Your Order</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer2">
+        <div class="footer2-sub">
+            <p>NEWSLETTER</p>
+            <div onclick="showDropdown1()"><img src="./images/icons8-arrowhead-30 (2).png" alt=""></div>
+        </div>
+        <div id="footer-dropdown1">
+            <div>
+                <p>Get the Latest oraimo News and Giveaways</p>
+                <p><input id="input-email" placeholder="Enter your email address" type="text"></p>
+                <p>SERVICE HOURS: Monday-Friday 9AM to 8PM</p>
+                <p>CUSTOMER SERVICE: +234 818 135 3103 (First Choice) <span id="phone"> +234 809 604 0753 </span></p>
+                <p>Whatsapp: +234 901 627 9193 +234 818 642 3337</p>
+            </div>
+        </div>
+        <div class="footer2-sub">
+            <p>ORAIMO</p>
+            <div onclick="showDropdown2()"><img src="./images/icons8-arrowhead-30 (2).png" alt=""></div>
+        </div>
+        <div id="footer-dropdown2">
+            <div>
+                <p>About Us</p>
+                <p>Where to Buy</p>
+                <p>Special Offer</p>
+            </div>
+        </div>
+        <div class="footer2-sub">
+            <p>TERMS</p>
+            <div onclick="showDropdown3()"><img src="./images/icons8-arrowhead-30 (2).png" alt=""></div>
+        </div>
+        <div id="footer-dropdown3">
+            <div>
+                <p>Warranty</p>
+                <p>Order & Shipping</p>
+                <p>Replacement & Refund</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="footer2-sub">
+            <p>GET HELP</p>
+            <div onclick="showDropdown4()"><img src="./images/icons8-arrowhead-30 (2).png" alt=""></div>
+        </div>
+        <div id="footer-dropdown4">
+            <div>
+                <p>Visit Carlcare</p>
+                <p>Track Your Order</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </div>
+    <div id="last-section">
+        <div><img id="logo2" src="https://media.ng.oraimo.com/logo/stores/1/oraimo_logo2.0.png" alt=""></div>
+        <p>© 2013-2023 oraimo Copyright. oraimo Technology (HK) Ltd</p>
+    </div>
+</body>
+<script src="scriptJS2.js"></script>
+</html>
